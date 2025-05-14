@@ -1,17 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Rubik,  Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+
+
+const rubik = Rubik({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], 
+ variable: '--font-rubik',
+});
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-manrope',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${rubik.variable} `} >
         <Navbar/>
         {children}
+        <h1 className={`${rubik.variable} `}>jneit</h1>
       </body>
     </html>
   );

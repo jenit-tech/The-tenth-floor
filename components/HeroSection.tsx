@@ -1,25 +1,30 @@
+"use client"
 import React from 'react'
 import Box from './Box';
 
+
 const HeroSection = () => {
     return (
-        <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-blue-50 via-purple-50 to-violet-100">
+        <section className="relative min-h-[90vh] flex items-center bg-gradient-to-bl from-blue-200 via-white to-purple-200">
+
+     
+      
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     
                     {/* Left Section */}
                     <div className="w-full max-w-[699px]">
                         <div className="w-full space-y-6">
-                            <h2 className="font-rubik font-extrabold text-[40px] leading-[100%] tracking-[1%] text-[#3F3E42]">
+                            <h2 className="font-main font-extrabold text-[40px] leading-[100%] tracking-[1%] text-[#3F3E42]">
                                 Transform Your Business with Expert Consulting & Training
                             </h2>
 
-                            <p className="font-rubik font-medium text-[24px] leading-[140%] tracking-[1%] text-[#3F3E42B2]">
+                            <p className="font-main font-medium text-[24px] leading-[140%] tracking-[1%] text-[#3F3E42B2]">
                                 We turn what your audience say, do and how they behave into your competitive edge with precision, speed and simplicity.
                             </p>
 
                             <div className="space-y-4">
-                                <h3 className="font-rubik font-medium text-[16px] leading-[140%] tracking-[1%] text-[#2E2C32B2]">
+                                <h3 className="font-main font-medium text-[16px] leading-[140%] tracking-[1%] text-[#2E2C32B2]">
                                     Let us know your Email ID. We'll get back to you ASAP
                                 </h3>
 
@@ -45,7 +50,7 @@ const HeroSection = () => {
 
                     {/* Right Section */}
                     <div className="w-full max-w-[550px]">
-                        <Box />
+                      <Box/>
                     </div>
                     
 
